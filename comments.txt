@@ -1,0 +1,2 @@
+use prettier
+use Eslint extension to reflect Eslint to vscode
