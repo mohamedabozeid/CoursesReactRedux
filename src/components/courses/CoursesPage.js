@@ -25,9 +25,6 @@ class CoursesPage extends React.Component {
   render() {
     return (
       <div>
-        {this.props.courses.map((course) => (
-          <div key={course.title}>{course.title}</div>
-        ))}
         <form onSubmit={this.handleSubmit}>
           <h1>Courses</h1>
           <h4>Add Course:</h4>
@@ -37,6 +34,10 @@ class CoursesPage extends React.Component {
           />
           <button type="submit">Add</button>
         </form>
+
+        {this.props.courses.map((course) => (
+          <div key={course.title}>{course.title}</div>
+        ))}
       </div>
     );
   }
